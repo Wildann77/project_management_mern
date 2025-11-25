@@ -70,22 +70,14 @@ app.use(
   })
 );
 
-// route tes
-app.get(
-  "/",
-  asyncHandler(async (req, res, next) => {
-    // contoh lempar error custom
-    throw new BadRequestException(
-      "This is a bad request",
-      ErrorCodeEnum.AUTH_INVALID_TOKEN
-    );
-
-    // kode ini nggak akan jalan kalau error dilempar
-    return res.status(HTTPSTATUS.OK).json({
-      message: "Hello Subscribe to the channel & share",
-    });
-  })
-);
+// health check route
+app.get("/", (req, res) => {
+  res.status(200).json({
+    status: "ok",
+    message: "Server is running",
+    timestamp: new Date().toISOString(),
+  });
+});
 
 // routes
 app.use(`${BASE_PATH}/auth`, authRoutes);
