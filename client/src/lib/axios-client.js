@@ -1,7 +1,7 @@
 import { useStore } from "@/store/store";
 import axios from "axios";
 
-const baseURL = import.meta.env.VITE_API_BASE_URL;
+const baseURL = import.meta.env.VITE_API_BASE_URL || "https://project-management-mern-backend.vercel.app/api";
 
 const options = {
   baseURL,
