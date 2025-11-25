@@ -2,34 +2,33 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/index.js",
-    "start": "node index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "type": "module",
-  "dependencies": {
-    "@faker-js/faker": "^9.9.0",
-    "bcrypt": "^6.0.0",
-    "cookie-session": "^2.1.1",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.1",
-    "express": "^5.1.0",
-    "express-session": "^1.18.2",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.17.2",
-    "passport": "^0.7.0",
-    "passport-google-oauth20": "^2.0.0",
-    "passport-jwt": "^4.0.1",
-    "passport-local": "^1.0.0",
-    "uuid": "^11.1.0",
-    "zod": "^4.0.17"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.10"
-  }
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "dev": "nodemon src/index.js",
+  "start": "node src/index.js"
+},
+"keywords": [],
+"author": "",
+"license": "ISC",
+"description": "",
+"type": "module",
+"dependencies": {
+  "@faker-js/faker": "^9.9.0",
+  "bcrypt": "^6.0.0",
+  "cookie-session": "^2.1.1",
+  "cors": "^2.8.5",
+  "dotenv": "^17.2.1",
+  "express": "^5.1.0",
+  "express-session": "^1.18.2",
+  "jsonwebtoken": "^9.0.2",
+  "mongoose": "^8.17.2",
+  "passport": "^0.7.0",
+  "passport-google-oauth20": "^2.0.0",
+  "passport-jwt": "^4.0.1",
+  "passport-local": "^1.0.0",
+  "uuid": "^11.1.0",
+  "zod": "^4.0.17"
+},
+"devDependencies": {
+  "nodemon": "^3.1.10"
+}
 }
